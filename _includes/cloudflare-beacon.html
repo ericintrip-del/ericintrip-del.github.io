@@ -1,0 +1,4 @@
+{% if site.cloudflare_beacon_token %}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+ data-cf-beacon='{"token": "{{ site.cloudflare_beacon_token }}"}'></script>
+{% endif %}
