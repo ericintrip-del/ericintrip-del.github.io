@@ -1,0 +1,19 @@
+# GOFUNWITH Theme Customization
+# These values can be fetched by the Admin UI
+
+# --- Logos ---
+logo: /assets/images/logo-typo-light.svg
+logo_dark: /assets/images/logo-typo-dark.svg
+
+# --- Fonts ---
+font:
+  primary: "Inter"
+  secondary: "Pretendard"
+
+# --- Colors (CSS Variables) ---
+# See /assets/css/style.scss for definitions
+colors:
+  light:
+    # ... your light theme color variables
+  dark:
+    # ... your dark theme color variables
