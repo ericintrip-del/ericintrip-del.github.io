@@ -1,0 +1,9 @@
+<nav class="lang-switch" aria-label="Language switch">
+  <a href="/ko/" {% if page.lang == "ko" %}aria-current="page"{% endif %}>한국어</a>
+  <span aria-hidden="true">|</span>
+  <a href="/en/" {% if page.lang == "en" %}aria-current="page"{% endif %}>English</a>
+</nav>
+<style>
+.lang-switch{display:flex;gap:.5rem;align-items:center;justify-content:flex-end;font-size:.9rem;margin: .5rem 0;}
+.lang-switch a[aria-current="page"]{text-decoration:underline;}
+</style>
