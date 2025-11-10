@@ -1,0 +1,11 @@
+<svg width="560" height="464" viewBox="0 0 560 464" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect x="275" y="120" width="10" height="42" rx="6" fill="#FFC53D"/>
+    <rect x="240" y="124" width="10" height="42" rx="6" transform="rotate(-35 245 145)" fill="#FFC53D"/>
+    <rect x="310" y="124" width="10" height="42" rx="6" transform="rotate(35 315 145)" fill="#FFC53D"/>
+  </g>
+  <g>
+    <text x="50%" y="239" font-family="'Inter', 'Montserrat', 'Poppins Rounded', Nunito, Quicksand, Arial, sans-serif" font-size="104" fill="#F0E5D4" font-weight="bold" text-anchor="middle" alignment-baseline="middle">gofunwith.</text>
+    <text x="50%" y="312" font-family="'Inter', 'Montserrat', 'Poppins Rounded', Nunito, Quicksand, Arial, sans-serif" font-size="28" fill="#F0E5D4" text-anchor="middle" alignment-baseline="middle">Explore. Create. Share.</text>
+  </g>
+</svg>
