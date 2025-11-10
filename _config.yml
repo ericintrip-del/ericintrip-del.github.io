@@ -1,10 +1,10 @@
 # --- Basic Info ---
 title: "GOFUNWITH – Explore. Create. Share."
 brand: "GOFUNWITH – Explore. Create. Share."
-domain: "blog.gofunwith.com"
-url: "https://gosungjinmoon.github.io" # GitHub Pages URL
-repo: "gosungjinmoon/gosungjinmoon.github.io"
-github: "https://github.com/gosungjinmoon"
+domain: "blog.vivaura.tech"
+url: "https://blog.vivaura.tech/" # GitHub Pages URL
+repo: "ericintrip-del/ericintrip-del.github.io"
+github: "https://github.com/ericintrip-del"
 timezone: "Asia/Seoul"
 theme: jekyll-theme-chirpy
 
