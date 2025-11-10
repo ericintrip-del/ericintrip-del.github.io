@@ -1,0 +1,15 @@
+---
+layout: default
+title: 홈
+permalink: /ko/
+lang: ko
+---
+<h1>GOFUNWITH 블로그 (KO)</h1>
+<p>안녕하세요! 실험, 창작, 공유의 여정을 함께해요.</p>
+<ul>
+  {% for post in site.posts %}
+    {% if post.lang == "ko" %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <small>{{ post.date | date: "%Y-%m-%d" }}</small></li>
+    {% endif %}
+  {% endfor %}
+</ul>
