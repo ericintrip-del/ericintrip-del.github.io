@@ -1,0 +1,37 @@
+name: Build and Deploy Jekyll
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1' # Gemfile에서 지정한 버전과 일치
+        bundler-cache: true # Gemfile.lock을 기반으로 캐시
+
+    - name: Install dependencies
+      run: |
+        bundle install
+
+    - name: Build site
+      run: |
+        bundle exec jekyll build --baseurl ""
+
+    - name: Deploy to GitHub Pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        force_orphan: true # gh-pages 브랜치를 오르펀 브랜치로 유지 (히스토리 없음)
