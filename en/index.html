@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home
+permalink: /en/
+lang: en
+---
+<h1>GOFUNWITH Blog (EN)</h1>
+<p>Explore, create, and share your journey.</p>
+<ul>
+  {% for post in site.posts %}
+    {% if post.lang == "en" %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <small>{{ post.date | date: "%Y-%m-%d" }}</small></li>
+    {% endif %}
+  {% endfor %}
+</ul>
