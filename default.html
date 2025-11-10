@@ -1,0 +1,10 @@
+---
+layout: page
+---
+{% comment %} Wrapper layout to inject custom includes on every page {% endcomment %}
+{% include ga4.html %}
+{% include cloudflare-beacon.html %}
+{% include adsense.html %}
+{% include lang-switch.html %}
+{{ content }}
+{% include giscus.html %}
