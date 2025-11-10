@@ -1,0 +1,13 @@
+:root{
+  --gfw-font-ko: "Pretendard", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --gfw-font-en: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --gfw-accent: #2563eb;
+}
+html{ scroll-behavior: smooth; }
+body{ font-family: var(--gfw-font-ko); }
+:lang(en){ font-family: var(--gfw-font-en); }
+a{ color: var(--gfw-accent); }
+img[loading="lazy"]{ filter: blur(0); }
+@media (prefers-color-scheme: dark) {
+  body{ background: #0b1220; color: #e5e7eb; }
+}
